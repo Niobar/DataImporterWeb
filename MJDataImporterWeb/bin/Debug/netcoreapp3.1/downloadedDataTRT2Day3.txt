@@ -1,0 +1,644 @@
+
+<!DOCTYPE html>
+<html>
+    <head><meta charset="utf-8" />
+    <title>TRT 2 Yayın Akışı - TRT Televizyon</title>
+<meta name="title" content="TRT 2 Yayın Akışı - TRT Televizyon" />
+<meta name="description" content="TRT 2 televizyon kanalına ait yayın akışına buradan erişebilirsiniz." />
+<meta name="keywords" content="trt, televizyon, yayın akışı, trt 2 yayın akışı" />
+<link rel="canonical" href="http://www.trt.net.tr/televizyon/akis.aspx?kanal=trt-2&gun=0" />
+<link rel="thumbnail" type="image/jpeg" href="http://www.trt.net.tr/anasayfa/images2012/trtlogo.png" />
+<link rel="image_src" href="http://www.trt.net.tr/anasayfa/images2012/trtlogo.png" />
+<meta property="og:locale" content="tr_TR" />
+<meta property="og:site_name" content="TRT Televizyon" />
+<meta property="og:title" content="TRT 2 Yayın Akışı - TRT Televizyon" />
+<meta property="og:description" content="TRT 2 televizyon kanalına ait yayın akışına buradan erişebilirsiniz." />
+<meta property="og:image" content="http://www.trt.net.tr/anasayfa/images2012/trtlogo.png" />
+<!-- mtgc817835433-20200329_184036 -->
+
+<link href="css/style.css?v=20170217154554" rel="stylesheet" />
+        <script src="js/query.min.js" type="text/javascript"> </script>
+        <script src="js/swfobject.js" type="text/javascript"> </script>
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="js/html5.js"> </script>
+        <![endif]-->
+        <!--[if IE 6]>
+            <meta http-equiv="refresh" content="0; url=diger/ie6.html" />
+        <![endif]-->
+        <script type="text/javascript">
+            	var saat;
+            	var currenttime;
+            	var montharray;
+            	var serverdate;
+            	$.ajax({
+            		url: "./diger/clockinit.aspx",
+            		cache: false,
+            		success: function(html) {
+            			saat = html;
+            		},
+            		complete: function() {
+            			saat = saat.split(" ");
+            			currenttime = 'March 29, 2020 ' + saat[0] + ":" + saat[1] + ":" + saat[2];
+            			montharray = new Array("Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık");
+            			serverdate = new Date(currenttime);
+            		}
+            	});
+            	window.onload = function() {
+            		setInterval("displaytime()", 1000);
+            	};
+
+            	function padlength(what) {
+            		var output = (what.toString().length == 1) ? "0" + what : what;
+            		return output;
+            	}
+
+            	function displaytime() {
+
+            		serverdate.setSeconds(serverdate.getSeconds() + 1);
+            		var datestring = padlength(serverdate.getDate()) + " " + montharray[serverdate.getMonth()] + " " + serverdate.getFullYear();
+            		var timestring = padlength(serverdate.getHours()) + "<span id='getMinutes'>" + padlength(serverdate.getMinutes()) + "</span><span id='getSeconds'>" + padlength(serverdate.getSeconds()) + "</span>";
+            		document.getElementById("saat_tarih").innerHTML = timestring + "&nbsp;<span id='datestring' >" + datestring + "</span>";
+            	}
+            </script>
+        <!--Social Style-->
+        <style type="text/css">
+            #fbLikeSendtwitter_menu {
+                left: 0;
+                padding: 0;
+                position: absolute;
+                top: 255px;
+                width: 65px;
+                z-index: 999;
+            }
+
+            #fbLikeSendtwitter_menu .ici {
+                background-color: #CEC9BD;
+                color: #000;
+                padding: 5px 5px 10px;
+                text-align: center;
+                width: 65px;
+            }
+
+            .sosyal { background: url(images/sosyal-aglar.png) }
+
+            .sosyal.facebook {
+                background-position: 0 0;
+                height: 32px;
+                width: 32px;
+            }
+
+            .sosyal.twitter {
+                background-position: 0 -32px;
+                height: 32px;
+                width: 32px;
+            }
+
+            .sosyal.googleplus {
+                background-position: 0 -64px;
+                height: 32px;
+                width: 32px;
+            }
+            
+            div#skipmenu{
+                position:relative;
+            }
+            div#skipmenu a.skippy{
+                position:absolute;
+                top: -1000px;
+                left:-1000px;
+                height: 1px;
+                width: 1px;
+                overflow:hidden;
+            }
+
+            div#skipmenu a.skippy:active, div#skipmenu a.skippy:focus, div#skipmenu a.skippy:hover{
+                position: absolute;
+                top:auto;
+                left:auto;
+                width:100%;
+                height: 1em;
+                width: auto;
+                font-size:1em;
+                font-weight:bold;
+                width:100%;
+                padding-bottom:15px;
+                color: black;
+                z-index:100;
+                text-align:right;
+                margin-bottom:25px;
+            }
+            
+            h2.BolumTextBaslik
+	        {
+	           position: absolute;
+               top: -9999px;
+               left: -9999px;
+            }
+            #masterhead_ana_out
+            {
+	            background-color:#000000;
+            }
+                
+            #masthead_ana 
+            {
+            	width:100%;
+	            min-height:30px;
+	            background-color:#000000;
+	            border-bottom: 2px solid #ffffff;
+            }
+
+            #masthead_ana a 
+            {
+	            color:#ffffff;
+            }
+        </style>
+
+        <script src="js/jquery.lazyload.js" type="text/javascript"> </script>
+        <script type="text/javascript">
+        	$(function() {
+        		$("img").lazyload({
+        			event: "ana_tan_img, di_kutu img,ad-image"
+        		});
+        	});
+        	$(window).bind("load", function() {
+        		var timeout = setTimeout(function() { $("img").trigger("ana_tan_img, di_kutu img,ad-image"); }, 5000);
+        	});
+        </script>
+
+        <script src="/js/jquery.cycle.all.js" type="text/javascript"></script>
+        
+    
+    <style type="text/css">
+        #akisTasiyiciDiv {
+            background: #DAD6CD;
+            clear: both;
+            font-family: Tahoma, Geneva, sans-serif;
+            font-size: 11px;
+            margin: 0;
+            padding: 0;
+            width: 880px;
+        }
+
+        #akisSolDiv {
+            float: left;
+            padding-bottom: 100px;
+            width: 155px;
+        }
+
+        #akisSagDiv {
+            float: right;
+            padding-bottom: 100px;
+            width: 680px;
+        }
+
+        #kanallarDIV {
+            clear: both;
+            float: right;
+            font-size: 1.25em;
+            margin-top: 125px;
+            width: 128px;
+        }
+
+        #kanallarDIV ul {
+            clear: both;
+            list-style-type: none;
+            margin: 0;
+            padding: 0
+        }
+
+        #kanallarDIV ul li {
+            margin-bottom: 5px;
+            text-align: right;
+            width: 128px;
+        }
+
+        #kanallarDIV ul li a {
+            color: #777;
+            display: block;
+            font-weight: 700;
+            height: 25px;
+            line-height: 25px;
+            padding-right: 2px;
+            text-decoration: none
+        }
+
+        #kanallarDIV ul li a:hover {
+            color: #333;
+            padding-right: 6px
+        }
+
+        #kanallarDIV ul li a.kanalSecildi {
+            background-color: #c7c3b8;
+            color: #000;
+            display: block;
+            font-weight: 700;
+            height: 25px;
+            line-height: 25px;
+            padding-right: 6px;
+            text-decoration: none;
+        }
+
+        #gunlerDIV {
+            clear: both;
+            font-size: 1.25em;
+            height: 56px;
+            margin: 0;
+            padding: 0
+        }
+
+        #gunlerDIV ul {
+            height: 56px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0
+        }
+
+        #gunlerDIV ul li {
+            float: left;
+            margin-right: 2px;
+            width: 71px
+        }
+
+        #gunlerDIV ul li#gdivAciklama {
+            background-color: #9e9b8a;
+            color: #fff;
+            font-size: .9em;
+            height: 44px;
+            padding-top: 12px;
+            text-align: center;
+            width: 167px;
+        }
+
+        #gunlerDIV ul li a {
+            color: #000;
+            display: block;
+            font-weight: 400;
+            height: 56px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        #gunlerDIV ul li a span.gnUst {
+            background-color: #bdb7ac;
+            display: block;
+            font-size: 2em;
+            font-weight: 400;
+            height: 34px;
+            line-height: 34px;
+        }
+
+        #gunlerDIV ul li a span.gnAlt {
+            background-color: #a09b8a;
+            display: block;
+            font-size: 1em;
+            font-weight: 400;
+            height: 20px;
+            line-height: 20px;
+            margin-top: 2px;
+        }
+
+        #gunlerDIV ul li a:hover { color: #000 }
+
+        #gunlerDIV ul li a:hover span.gnUst { background-color: #a09b8a }
+
+        #gunlerDIV ul li a:hover span.gnAlt {
+            background-color: #a09b8a;
+            font-size: 1em
+        }
+
+        #gunlerDIV ul li a.gunSecildi {
+            color: #fff;
+            display: block;
+            font-weight: 400;
+            height: 56px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        #gunlerDIV ul li a.gunSecildi span.gnUst {
+            background-color: #655e4b;
+            display: block;
+            font-size: 2em;
+            height: 34px;
+            line-height: 34px;
+        }
+
+        #gunlerDIV ul li a.gunSecildi span.gnAlt {
+            background-color: #655e4b;
+            display: block;
+            height: 20px;
+            line-height: 20px;
+            margin-top: 2px;
+        }
+
+        #programturlerDIV {
+            clear: both;
+            font-size: 1.25em;
+            height: 42px;
+            margin-top: 5px;
+        }
+
+        #programturlerDIV ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0
+        }
+
+        #programturlerDIV ul li {
+            float: left;
+            padding-right: 1px;
+            width: 67px
+        }
+
+        a.kateS0 {
+            background-color: #b2aca0;
+            border: 1px solid #999590;
+            color: #000;
+            display: block;
+            font-weight: 400;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            text-decoration: none;
+            width: 65px;
+        }
+
+        a:hover.kateS0 {
+            background-color: #999590;
+            background-image: none;
+            border: 1px solid #b2aca0;
+            color: #000;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            width: 65px;
+        }
+
+        a.kateS1 {
+            background-color: #727272;
+            border: 1px solid #000;
+            color: #fff;
+            display: block;
+            font-weight: 400;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            text-decoration: none;
+            width: 65px;
+        }
+
+        #gunlukAkisDIV {
+            clear: both;
+            font-size: 1em;
+            margin-top: 20px;
+            min-height: 400px;
+        }
+
+        #gunlukAkisDIV p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 2em
+        }
+
+        #gunlukAkisDIV p a {
+            color: #222;
+            font-size: 1.1em;
+            line-height: 2em
+        }
+
+        #gunlukAkisDIV p .aks0 {
+            color: #222;
+            padding-right: 15px;
+        }
+
+        .kLS { }
+    </style>
+
+    
+        
+        <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+        <script>
+          var googletag = googletag || {};
+          googletag.cmd = googletag.cmd || [];
+        </script>
+        
+    <title>
+
+</title></head>
+        
+    <body>
+        <script>
+          googletag.cmd.push(function() {
+            googletag.defineSlot('/112281457/trtnettr_masthead', [970, 250], 'div-gpt-ad-1485517855851-0').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+			googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+          });
+        </script>
+	    
+        <!--masterhead_ana reklam alani - BEGIN -->
+        <div id="masthead_ana" style="min-height:36px;">
+		    <div style="z-index:3;float: right; top: 5px; padding: 5px; margin-right: 2px;width:50px">
+		    <a id="oc_masthead" onclick="if ($(this).html() == 'Reklamı Kapat') {$(this).html('Reklamı Aç'); $('#div-gpt-ad-1485517855851-0').css('display', 'none')} else {$(this).html('Reklamı Kapat'); $('#div-gpt-ad-1485517855851-0').css('display', 'block')}" href="javascript:;">Reklamı Kapat</a>
+		    </div>
+		    <!-- /112281457/trtnettr_masthead -->
+		    <div id='div-gpt-ad-1485517855851-0' style='height:250px; width:970px;margin:0 auto;top: 0px;z-index:1;'>
+			    
+		    </div>
+	    </div>
+        
+        <!-- /112281457/trtnettr_masthead -->
+        <script>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1485517855851-0'); });
+        </script>
+        
+	    <script type="text/javascript">
+			    setTimeout(function() {
+			        var htmlstring = document.getElementById("div-gpt-ad-1485517855851-0").innerHTML;
+			        htmlstring = (htmlstring.trim) ? htmlstring.trim() : htmlstring.replace(/^\s+/,'');
+                    if(htmlstring == '') {
+					        $('#masthead_ana').css('display', 'none');
+				        }
+			    }, 1000);
+	    </script>
+	    <!--masterhead_ana reklam alani - END -->
+        
+        
+             
+            <div id="ust_bant">
+                <ul id="ust_menu">
+                    <h2 class="BolumTextBaslik">Televizyon Üst Menü</h2>
+                    <li style="float: left; height: 24px; position: relative; width: 40px;">
+                        <a class="trtlogo" href="http://www.trt.net.tr" title="TRT Anasayfa"></a>
+                    </li>
+                    <li><a href="https://www.trt.tv/" target="_blank">TRT.TV</a></li>
+					<li><a href="https://www.trt.tv/diziler" target="_blank">DİZİ</a></li>
+					<li><a href="https://www.trt.tv/programlar" target="_blank">PROGRAM</a></li>
+					<li><a href="https://www.trt.tv/belgesel" target="_blank">BELGESEL</a></li>
+					<li><a href="https://www.trt.tv/cocuk" target="_blank">ÇOCUK</a></li>
+					<li><a href="http://engelsiztrt.tv/" target="_blank">ENGELSİZ</a></li>
+                    
+                    
+                    
+                    
+                    <li><a href="akis.aspx" title="Yayın Akışı">YAYIN AKIŞI</a></li>
+                    <li id="caliizle"><a href="http://www.trt.net.tr/anasayfa/canli.aspx?y=tv"  title="Televizyon Kanallarını Canlı İzle"><img width="38" height="30" src="images/live.gif" alt="Canlı İzle" /></a></li>
+                </ul>
+            </div>
+            <div class="page">
+                <div id="ana_sol_menu_holder">
+                    <div id="saat_tarih"></div>
+                    <div id="ctl00_ana_sol_menu_logo"><img src='images/analogo.png' /></div>
+                    
+        </div>
+        <div class="top_banner">
+            <div style="margin-left: 60px;margin-top: 20px;">
+                <script type="text/javascript">
+                	var linkTURU = "";
+                	var linkADI = "";
+                	$("a.lnkgtrEV").click(function() {
+                		linkTURU = $(this).attr("ltur");
+                		linkADI = $(this).attr("lad");
+                		//alert(linkTURU + ' - ' + linkADI);
+                		_gaq.push(['_trackEvent', linkTURU, 'tiklandi', linkADI]);
+                	});
+                </script>
+                
+                
+		        
+		        
+		        
+		        
+		        
+		        <!-- /112281457/trtnettr_sitegeneli_728x90 -->
+                
+                
+
+            </div>
+        </div>
+        
+
+    <div id="akisTasiyiciDiv">
+
+        <div id="akisSolDiv">
+            <div id="kanallarDIV">
+                <ul>
+                    <li><a href="./akis.aspx?kanal=trt-1&gun=3" kanalID="1">TRT 1</a></li><li><a href="./akis.aspx?kanal=trt-2&gun=3" kanalID="2">TRT 2</a></li><li><a href="./akis.aspx?kanal=trt-haber&gun=3" kanalID="3">TRT Haber</a></li><li><a href="./akis.aspx?kanal=trt-spor&gun=3" kanalID="4">TRT Spor</a></li><li><a href="./akis.aspx?kanal=trt-spor2&gun=3" kanalID="14">TRT Spor 2</a></li><li><a href="./akis.aspx?kanal=trt-kurdi&gun=3" kanalID="5">TRT Kurdî</a></li><li><a href="./akis.aspx?kanal=trt-cocuk&gun=3" kanalID="6">TRT Çocuk</a></li><li><a href="./akis.aspx?kanal=trt-turk&gun=3" kanalID="7">TRT Türk</a></li><li><a href="./akis.aspx?kanal=trt-avaz&gun=3" kanalID="8">TRT Avaz</a></li><li><a href="./akis.aspx?kanal=trt-belgesel&gun=3" kanalID="9">TRT Belgesel</a></li><li><a href="./akis.aspx?kanal=trt-muzik&gun=3" kanalID="10">TRT Müzik</a></li><li><a href="./akis.aspx?kanal=trt-arabi&gun=3" kanalID="11">TRT Arabi</a></li><li><a href="./akis.aspx?kanal=trt-4k&gun=3" kanalID="13">TRT 4K</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="akisSagDiv">
+
+            <div id="gunlerDIV">
+                <ul>
+                    <li id="gdivAciklama">
+                        Kanala ait akışı görmek için kanal isimlerine tıklayınız.
+                    </li>
+                    <li><a href="akis.aspx?kanal=trt-2&gun=0"><span class="gnUst">29 </span><span class="gnAlt">Pazar</span></a></li><li><a href="akis.aspx?kanal=trt-2&gun=1"><span class="gnUst">30 </span><span class="gnAlt">Pazartesi</span></a></li><li><a href="akis.aspx?kanal=trt-2&gun=2"><span class="gnUst">31 </span><span class="gnAlt">Salı</span></a></li><li><a href="akis.aspx?kanal=trt-2&gun=3"><span class="gnUst">1 </span><span class="gnAlt">Çarşamba</span></a></li><li><a href="akis.aspx?kanal=trt-2&gun=4"><span class="gnUst">2 </span><span class="gnAlt">Perşembe</span></a></li><li><a href="akis.aspx?kanal=trt-2&gun=5"><span class="gnUst">3 </span><span class="gnAlt">Cuma</span></a></li><li><a href="akis.aspx?kanal=trt-2&gun=6"><span class="gnUst">4 </span><span class="gnAlt">Cumartesi</span></a></li>
+                </ul>
+            </div>
+
+            <div id="programturlerDIV">
+                <ul>
+                    <li><a class="kLS kateS1" turID="0" href="#">Tümü</a></li>
+                    <li><a class="kLS kateS0" turID="4" href="#">Dizi</a></li>
+                    <li><a class="kLS kateS0" turID="2" href="#">Kültür</a></li>
+                    <li><a class="kLS kateS0" turID="8" href="#">Müzik</a></li>
+                    <li><a class="kLS kateS0" turID="9" href="#">Eğlence</a></li>
+                    <li><a class="kLS kateS0" turID="6" href="#">Haber</a></li>
+                    <li><a class="kLS kateS0" turID="5" href="#">Sinema</a></li>
+                    <li><a class="kLS kateS0" turID="3" href="#">Çocuk</a></li>
+                    <li><a class="kLS kateS0" turID="1" href="#">Eğitim</a></li>
+                    <li><a class="kLS kateS0" turID="7" href="#">Spor</a></li>
+                </ul>
+            </div>
+
+            <div id="gunlukAkisDIV">
+                <p class="tur129"><a href="#" target="_self"><span class="aks0">04:58</span><span class="aks1">İstiklal Marşı</span></a></p><p class="tur41"><a href="#" target="_self"><span class="aks0">05:00</span><span class="aks1">Aramızda Müzik Var : Kolaj</span></a></p><p class="tur91"><a href="#" target="_self"><span class="aks0">05:45</span><span class="aks1">Türkiye Atlası </span></a></p><p class="tur35"><a href="#" target="_self"><span class="aks0">06:00</span><span class="aks1">Eskici</span></a></p><p class="tur74"><a href="#" target="_self"><span class="aks0">06:30</span><span class="aks1">Hayat Sanat</span></a></p><p class="tur35"><a href="#" target="_self"><span class="aks0">06:50</span><span class="aks1">Müzelerin Yıldızları</span></a></p><p class="tur73"><a href="#" target="_self"><span class="aks0">07:00</span><span class="aks1">Kelimeler Ve Şeyler</span></a></p><p class="tur41"><a href="#" target="_self"><span class="aks0">07:50</span><span class="aks1">Anjelika Akbar İle Sesler</span></a></p><p class="tur74"><a href="#" target="_self"><span class="aks0">08:30</span><span class="aks1">Nakkaşın Fırçası</span></a></p><p class="tur35"><a href="#" target="_self"><span class="aks0">09:00</span><span class="aks1">Murat Boncuk'la Atölye</span></a></p><p class="tur74"><a href="#" target="_self"><span class="aks0">09:30</span><span class="aks1">Resim Sevinci : Bob Ross</span></a></p><p class="tur74"><a href="#" target="_self"><span class="aks0">10:00</span><span class="aks1">Hülya Koçyiğit İle Film Gibi Hayatlar</span></a></p><p class="tur91"><a href="#" target="_self"><span class="aks0">10:50</span><span class="aks1">ÇOCUKLARA YADİGÂR	</span></a></p><p class="tur127"><a href="#" target="_self"><span class="aks0">11:00</span><span class="aks1">2CELLOS SYDNEY LIVE</span></a></p><p class="tur80"><a href="#" target="_self"><span class="aks0">12:00</span><span class="aks1">Tarihin Ruhu</span></a></p><p class="tur74"><a href="#" target="_self"><span class="aks0">12:30</span><span class="aks1">Hayat Sanat</span></a></p><p class="tur35"><a href="#" target="_self"><span class="aks0">12:50</span><span class="aks1">Müzelerin Yıldızları</span></a></p><p class="tur128"><a href="#" target="_self"><span class="aks0">13:00</span><span class="aks1">Opera Dünyası</span></a></p><p class="tur35"><a href="#" target="_self"><span class="aks0">13:30</span><span class="aks1">Aykut Köksal İle Mimarlık Söyleşileri</span></a></p><p class="tur35"><a href="#" target="_self"><span class="aks0">14:20</span><span class="aks1">Müzelerin Yıldızları</span></a></p><p class="tur35"><a href="#" target="_self"><span class="aks0">14:30</span><span class="aks1">Sinema Dünyası</span></a></p><p class="tur82"><a href="#" target="_self"><span class="aks0">15:00</span><span class="aks1">Sarayın Lezzetleri</span></a></p><p class="tur74"><a href="#" target="_self"><span class="aks0">15:30</span><span class="aks1">Bizim Resmimiz</span></a></p><p class="tur35"><a href="#" target="_self"><span class="aks0">16:00</span><span class="aks1">İhmal Edilebilir Nasihatler</span></a></p><p class="tur35"><a href="#" target="_self"><span class="aks0">16:50</span><span class="aks1">Fotoğraflar</span></a></p><p class="tur41"><a href="#" target="_self"><span class="aks0">17:00</span><span class="aks1">Aramızda Müzik Var : Kolaj</span></a></p><p class="tur74"><a href="#" target="_self"><span class="aks0">18:00</span><span class="aks1">Hayat Sanat</span></a></p><p class="tur35"><a href="#" target="_self"><span class="aks0">18:20</span><span class="aks1">Müzelerin Yıldızları</span></a></p><p class="tur74"><a href="#" target="_self"><span class="aks0">18:30</span><span class="aks1">Resim Sevinci : Bob Ross</span></a></p><p class="tur127"><a href="#" target="_self"><span class="aks0">19:00</span><span class="aks1">Pera Konserleri</span></a></p><p class="tur35"><a href="#" target="_self"><span class="aks0">19:50</span><span class="aks1">Kısa Bir Ara</span></a></p><p class="tur74"><a href="#" target="_self"><span class="aks0">20:00</span><span class="aks1">Günseli Kato İle Miyako'dan Payitahta</span></a></p><p class="tur97"><a href="#" target="_self"><span class="aks0">21:00</span><span class="aks1">Yabancı Sinema: Serpiko (Serpico)</span></a></p><p class="tur73"><a href="#" target="_self"><span class="aks0">23:00</span><span class="aks1">Edebiyat Söyleşileri </span></a></p><p class="tur74"><a href="#" target="_self"><span class="aks0">00:00</span><span class="aks1">Günseli Kato İle Miyako'dan Payitahta</span></a></p><p class="tur97"><a href="#" target="_self"><span class="aks0">01:00</span><span class="aks1">Yabancı Sinema: Serpiko (Serpico)</span></a></p><p class="tur74"><a href="#" target="_self"><span class="aks0">03:00</span><span class="aks1">Hayat Sanat</span></a></p><p class="tur35"><a href="#" target="_self"><span class="aks0">03:20</span><span class="aks1">Müzelerin Yıldızları</span></a></p><p class="tur73"><a href="#" target="_self"><span class="aks0">03:30</span><span class="aks1">Edebiyat Söyleşileri </span></a></p><p class="tur74"><a href="#" target="_self"><span class="aks0">04:30</span><span class="aks1">Bir Resim Bir Hikaye</span></a></p>
+            </div>
+            <div style="clear:both">
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+    	$("a").click(function() {
+    		if ($(this).attr("href") == "#") {
+    			$(this).attr("href", "javascript:void(0);");
+    		}
+    	});
+
+    	var hangiKanalIstendiID = 2;
+    	$('#kanallarDIV ul li a[kanalID="' + hangiKanalIstendiID + '"]').addClass("kanalSecildi");
+
+    	var hangiGunIstendi = 3;
+    	$("#gunlerDIV ul li a:eq(" + hangiGunIstendi + ")").addClass("gunSecildi");
+
+    	$(".kLS").click(function() {
+    		var hangiIndexliA = $("#programturlerDIV ul li a.kLS").index(this);
+
+    		$("#programturlerDIV ul li a.kLS").each(function(i) {
+    			if (i != hangiIndexliA) {
+    				$("#programturlerDIV ul li a:eq(" + i + ")").removeClass("kateS1").addClass("kateS0");
+    			} else {
+    				$("#programturlerDIV ul li a:eq(" + i + ")").removeClass("kateS0").addClass("kateS1");
+    			}
+    		});
+
+    		var hangiTurID = $(this).attr("turID");
+    		//var akisPrgSayisi = $("#gunlukAkisDIV p").size();
+    		if (hangiTurID != 0) {
+    			$("#gunlukAkisDIV p").slideUp(200);
+    			$("#gunlukAkisDIV p.tur" + hangiTurID).slideDown(200);
+    		} else {
+    			$("#gunlukAkisDIV p").slideDown(200);
+    		};
+    	});
+
+    </script>
+
+
+    </div>
+    <footer>
+                <div id="fbLikeSendtwitter_menu">
+                    <div id="fb-root"></div>
+                    <div class="ici">
+                        <a href="http://www.facebook.com/TRTTelevizyon" target="_blank" title="TRT Televizyon Facebook Sayfası">
+                            <img class="sosyal facebook" src="images/1.gif" alt="facebook logo" width="1" height="1" /><br /></a>
+                        <br />
+                        <script type="text/javascript" src="http://connect.facebook.net/tr_TR/all.js#xfbml=1"> </script>
+                        <fb:like href="http://www.facebook.com/TRTTelevizyon" layout="box_count"
+                                 send="true" width="55" show_faces="false"></fb:like>
+                        <br />
+                        <br />
+                        <a href="http://twitter.com/TRTTelevizyon" target="_blank" title="TRT Televizyon Twitter Hesabı">
+                            <img class="sosyal twitter" src="images/1.gif" alt="twitter logo" width="1" height="1" /></a>
+                    </div>
+                </div>
+                <script type="text/javascript" src="js/jquery.corner.js"> </script>
+                <script type="text/javascript">
+                	$("#fbLikeSendtwitter_menu .ici").corner("round 10px right");
+                	var name = "#fbLikeSendtwitter_menu";
+                	var menuYloc = null;
+
+                	menuYloc = parseInt($(name).css("top").substring(0, $(name).css("top").indexOf("px")));
+                	$(window).scroll(function() {
+                		var offset = menuYloc + $(document).scrollTop() + "px";
+                		$(name).stop().animate({
+                			top: offset
+                		}, 'slow', 'linear');
+                	});
+                </script>
+                <!-- Google Analystic Script -->
+                <script type="text/javascript" src="js/ga.js"> </script>
+                <!-- Google Analystic Script -->
+                
+            </footer>
+    
+</body>
+</html>

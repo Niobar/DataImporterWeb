@@ -1,0 +1,13 @@
+C:\Users\tjtj\source\repos\MJDataImporterWeb\MJDataImporterWeb\obj\Debug\netcoreapp3.1\MJDataImporterWeb.csprojAssemblyReference.cache
+C:\Users\tjtj\source\repos\MJDataImporterWeb\MJDataImporterWeb\obj\Debug\netcoreapp3.1\MJDataImporterWeb.csproj.CoreCompileInputs.cache
+C:\Users\tjtj\source\repos\MJDataImporterWeb\MJDataImporterWeb\obj\Debug\netcoreapp3.1\MJDataImporterWeb.AssemblyInfoInputs.cache
+C:\Users\tjtj\source\repos\MJDataImporterWeb\MJDataImporterWeb\obj\Debug\netcoreapp3.1\MJDataImporterWeb.AssemblyInfo.cs
+C:\Users\tjtj\source\repos\MJDataImporterWeb\MJDataImporterWeb\bin\Debug\netcoreapp3.1\MJDataImporterWeb.exe
+C:\Users\tjtj\source\repos\MJDataImporterWeb\MJDataImporterWeb\bin\Debug\netcoreapp3.1\MJDataImporterWeb.deps.json
+C:\Users\tjtj\source\repos\MJDataImporterWeb\MJDataImporterWeb\bin\Debug\netcoreapp3.1\MJDataImporterWeb.runtimeconfig.json
+C:\Users\tjtj\source\repos\MJDataImporterWeb\MJDataImporterWeb\bin\Debug\netcoreapp3.1\MJDataImporterWeb.runtimeconfig.dev.json
+C:\Users\tjtj\source\repos\MJDataImporterWeb\MJDataImporterWeb\bin\Debug\netcoreapp3.1\MJDataImporterWeb.dll
+C:\Users\tjtj\source\repos\MJDataImporterWeb\MJDataImporterWeb\bin\Debug\netcoreapp3.1\MJDataImporterWeb.pdb
+C:\Users\tjtj\source\repos\MJDataImporterWeb\MJDataImporterWeb\obj\Debug\netcoreapp3.1\MJDataImporterWeb.dll
+C:\Users\tjtj\source\repos\MJDataImporterWeb\MJDataImporterWeb\obj\Debug\netcoreapp3.1\MJDataImporterWeb.pdb
+C:\Users\tjtj\source\repos\MJDataImporterWeb\MJDataImporterWeb\obj\Debug\netcoreapp3.1\MJDataImporterWeb.genruntimeconfig.cache
